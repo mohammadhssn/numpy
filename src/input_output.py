@@ -6,11 +6,11 @@ one = np.array([
     [4, 5, 6]
 ])
 
-np.save('single_array.npy', one)
+np.save('input_output/single_array.npy', one)
 # np.savetxt('abc.txt', one)
 
 
-print(np.load('single_array.npy'))
+print(np.load('input_output/single_array.npy'))
 # np.loadtxt('abc.txt')
 
 # --------------------------------------------------------
@@ -25,8 +25,8 @@ three = np.array([
     [44, 55, 66]
 ])
 
-np.savez('multy_array.npz', two=two, three=three)
+np.savez('input_output/multy_array.npz', two=two, three=three)
 
-l = np.load('multy_array.npz')
+l = np.load('input_output/multy_array.npz')
 print(l['two'])
 print(l['three'])
